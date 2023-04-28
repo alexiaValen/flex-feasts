@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS meals_db;
+
+CREATE DATABASE meals_db;
