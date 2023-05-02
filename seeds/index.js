@@ -18,12 +18,6 @@ const seedAll = async () => {
   });
 
 
-  await seedCategory();
-
-  await seedMeals();
-
-
-
   process.exit(0);
 };
 

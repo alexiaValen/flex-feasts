@@ -32,7 +32,7 @@ Meal.init(
             allowNull: false
         },
         instructions: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.TEXT,
             allowNull: false
         },
         protein: {
@@ -53,13 +53,6 @@ Meal.init(
         filename: {
             type: DataTypes.STRING
         },
-        category_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'category',
-                key: 'id'
-            }
-        }
     },
     {
         sequelize,
