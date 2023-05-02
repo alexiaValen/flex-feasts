@@ -35,6 +35,24 @@ Meal.init(
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        protein: {
+            type: DataTypes.INTEGER,
+        },
+        fat: {
+            type: DataTypes.INTEGER,
+        },
+        carbs: {
+            type: DataTypes.INTEGER,
+        },
+        sugar: {
+            type: DataTypes.INTEGER,
+        },
+        calories: {
+            type: DataTypes.INTEGER,
+        },
+        filename: {
+            type: DataTypes.STRING
+        },
         category_id: {
             type: DataTypes.INTEGER,
             references: {
