@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Chicken Avocado Wrap",
+        "description": "A healthy and quick wrap.",
+        "prep_time": 5,
+        "cook_time": 20,
+        "ingredients": ["Chicken Breast", "Avocado", "Tomatoes", "Tortilla", "Cheddar Cheese", "Lettuce"],
+        "instructions": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper mollis risus eget laoreet. Aliquam vel arcu rutrum, aliquam risus at, finibus erat. Duis rhoncus ex elit, et malesuada mauris sodales et. Phasellus suscipit in nisi ut blandit. Ut id scelerisque felis. Nulla eu ullamcorper eros. Phasellus posuere iaculis tortor."],
+        "protein": 25,
+        "fat": 10,
+        "carbs": 30,
+        "filename": "Chicken-wrap.jpeg",
+        "calories": 500
+    },
+    {
+        "name": "Lemon Baked Salmon",
+        "description": "A flavorful and easy dinner.",
+        "prep_time": 10,
+        "cook_time": 30,
+        "ingredients": ["Salmon", "Lemon", "Garlic", "Itallian Seaoning", "Salt", "Pepper"],
+        "instructions": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper mollis risus eget laoreet. Aliquam vel arcu rutrum, aliquam risus at, finibus erat. Duis rhoncus ex elit, et malesuada mauris sodales et. Phasellus suscipit in nisi ut blandit. Ut id scelerisque felis. Nulla eu ullamcorper eros. Phasellus posuere iaculis tortor."],
+        "protein": 25,
+        "fat": 15,
+        "carbs": 20,
+        "calories": 400,
+        "filename": "baked-salmon.jpeg",
+        "category_id": 4
+    },
+    {
+        "name": "Vegan Soy-Glazed Tofu Stir-Fry",
+        "description": "A simple yet tasty weekday dinner",
+        "prep_time": 10,
+        "cook_time": 30,
+        "ingredients": ["Rice Noodles", "Firm Tofu", "Soy Sauce", "Green Onion", "Chille Peppers"],
+        "instructions": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper mollis risus eget laoreet. Aliquam vel arcu rutrum, aliquam risus at, finibus erat. Duis rhoncus ex elit, et malesuada mauris sodales et. Phasellus suscipit in nisi ut blandit. Ut id scelerisque felis. Nulla eu ullamcorper eros. Phasellus posuere iaculis tortor."],
+        "protein": 22,
+        "fat": 14,
+        "carbs": 50,
+        "calories": 410,
+        "filename": "Vegan-Stir-Fry.jpeg",
+        "category_id": 2
+    }
+]
