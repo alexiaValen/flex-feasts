@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // Sets up the routes
-// app.use(require('./controllers/home-routes'));
+app.use(require('./controllers/home-routes'));
 
 app.use(routes);
 
