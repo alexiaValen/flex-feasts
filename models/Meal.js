@@ -53,6 +53,14 @@ Meal.init(
         filename: {
             type: DataTypes.STRING
         },
+        category_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'category',
+              key: 'id',
+              onDelete: 'CASCADE'
+            },
+    },
     },
     {
         sequelize,
