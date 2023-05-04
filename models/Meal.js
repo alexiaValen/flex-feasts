@@ -28,7 +28,7 @@ Meal.init(
             allowNull: false,
         },
         ingredients: {
-            type: DataTypes.STRING,
+            type: DataTypes.JSON,
             allowNull: false
         },
         instructions: {

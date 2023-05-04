@@ -1,24 +1,22 @@
-{{#each meals as |meal|}}
-  <div class="dish col-md-4">
-    <p>
-      
-        {{meal.name}}
-        {{meal.description}}
-
-        {{category.category_name}}
-
-    </p>
+{{#each meals}}
+  <div class="meal">
+    <h2>{{name}}</h2>
+    <img src="images/{{filename}}" alt="">
+    <p>{{description}}</p>
+    {{#if ingredients}}
+      <h3>Ingredients:</h3>
+      <ul>
+        {{#each ingredients}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>No ingredients listed.</p>
+    {{/if}}
+    <p>{{instructions}}</p>
+    <p>Protein: {{protein}}g</p>
+    <p>Fat: {{fat}}g</p>
+    <p>Carbs: {{carbs}}g</p>
+    <p>Calories: {{calories}}</p>
   </div>
-  
-  {{/each}}
-
-  {{#each categories as |category|}}
-  <div class="dish col-md-4">
-    <p>
-
-        {{category.category_name}}
-
-    </p>
-  </div>
-  
-  {{/each}}
+{{/each}}
