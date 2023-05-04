@@ -10,7 +10,8 @@
         "fat": 10,
         "carbs": 30,
         "filename": "Chicken-wrap.jpeg",
-        "calories": 500
+        "calories": 500,
+        "category_id": 1
     },
     {
         "name": "Lemon Baked Salmon",
@@ -24,7 +25,7 @@
         "carbs": 20,
         "calories": 400,
         "filename": "baked-salmon.jpeg",
-        "category_id": 4
+        "category_id": 3
     },
     {
         "name": "Vegan Soy-Glazed Tofu Stir-Fry",
