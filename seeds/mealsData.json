@@ -10,8 +10,7 @@
         "fat": 10,
         "carbs": 30,
         "filename": "Chicken-wrap.jpeg",
-        "calories": 500,
-        "category_id": 1
+        "calories": 500
     },
     {
         "name": "Lemon Baked Salmon",
@@ -29,7 +28,7 @@
     },
     {
         "name": "Vegan Soy-Glazed Tofu Stir-Fry",
-        "description": "A simple yet tasty weekday dinner",
+        "description": "A simple yet tasty weekday dinner.",
         "prep_time": 10,
         "cook_time": 30,
         "ingredients": ["Rice Noodles", "Firm Tofu", "Soy Sauce", "Green Onion", "Chille Peppers"],
@@ -40,5 +39,47 @@
         "calories": 410,
         "filename": "Vegan-Stir-Fry.jpeg",
         "category_id": 2
+    },
+    {
+        "name": "Quick Guacamole Quinoa Salad",
+        "description": "A delicious vegan option for any time of day.",
+        "prep_time": 10,
+        "cook_time": 20,
+        "ingredients": ["1 cup quinoa", "2 avocados", "½ small white or red onion", "½ cup cilantro", "2 tablespoons lime juice", "½ teaspoon kosher salt", "One 15-ounce can black beans", "1 cup cherry tomatoes", "Extra-virgin olive oil", "Romaine lettuce, minced garlic, hot sauce, red-pepper flakes and lime wedges, for serving" ],
+        "instructions": "Cook the quinoa according to package instructions. Allow it to cool to room temperature. Score the avocado flesh (still in the skin) with a paring knife, then scoop the flesh into a large bowl. Coarsely mash about half of the avocado with a fork, leaving plenty of chunks intact. Mix in the onion, cilantro, lime juice and salt. Gently fold in the black beans, tomatoes and quinoa. Taste and adjust the seasonings if desired and drizzle with olive oil. Serve on a bed of romaine lettuce topped with garlic, hot sauce and red-pepper flakes alongside lime wedges.",
+        "protein": 15,
+        "fat": 18,
+        "carbs": 57,
+        "calories": 431,
+        "filename": "avocado-quinoa-salad-recipe.jpeg",
+        "category_id": 2
+    },
+    {
+        "name": "Sheet-Pan Lemon Butter Veggies and Sausage",
+        "description": "A hearty and dish-free dinner.",
+        "prep_time": 10,
+        "cook_time": 30,
+        "ingredients": ["4 tablespoons unsalted butter, melted", "Zest and juice of 1 lemon", "2 garlic cloves, minced", "4 medium carrots, peeled and diced", "1 bunch radishes, halved", "2 red bell peppers, diced", "1 small eggplant, diced", "Kosher salt and freshly ground black pepper", "1 pint red cherry tomatoes", "1 bunch asparagus, cut into 1-inch pieces", "2 small zucchini, diced", "1½ pounds chicken sausage, thickly sliced"],
+        "instructions": "Preheat the oven to 400°F. In a small bowl, stir together the butter, lemon zest, lemon juice and garlic. On a large baking sheet, arrange the carrots, radishes, bell pepper, and eggplant in an even layer. Drizzle about half of the lemon garlic butter over the vegetables and toss well to combine. Season with salt and pepper. Roast until the veggies are just tender, 15 to 17 minutes. Add the tomatoes, asparagus, zucchini and sausage. Drizzle the remaining lemon garlic butter over the mixture, and toss well to combine. Roast until all the vegetables are very tender and the sausage has begun to brown, 17 to 20 minutes",
+        "protein": 16,
+        "fat": 20,
+        "carbs": 18,
+        "calories": 310,
+        "filename": "sheet-pan-lemon-garlic-butter-veggies-and-sausage.jpeg",
+        "category_id": 3
+    },
+    {
+        "name": "Greek Yogurt Chicken Salad Stuffed Peppers",
+        "description": "A light and high-protein chicken salad dish",
+        "prep_time": 10,
+        "cook_time": 20,
+        "ingredients": ["⅔ cup Greek yogurt", "2 tablespoons Dijon mustard", "2 tablespoons seasoned rice vinegar", "Kosher salt and freshly ground black pepper", "⅓ cup chopped fresh parsley", "Meat from 1 rotisserie chicken, cubed", "4 stalks celery, sliced", "1 bunch scallions, sliced and divided", "1 pint cherry tomatoes, quartered and divided", "½ English cucumber, diced", "3 bell peppers, halved and seeds removed"],
+        "instructions": "In a medium bowl, whisk together the Greek yogurt, mustard and rice vinegar; season to taste with salt and pepper. Stir in the parsley. Add the chicken, celery and three-quarters each of the scallions, tomatoes and cucumbers. Stir well to combine. Divide the chicken salad among the bell pepper boats; garnish with the remaining scallions, tomatoes and cucumbers.",
+        "protein": 60,
+        "fat": 10,
+        "carbs": 17,
+        "calories": 400,
+        "filename": "chicken-salad-stuffed-peppers.jpeg",
+        "category_id": 3
     }
 ]
