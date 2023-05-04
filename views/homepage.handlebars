@@ -1,0 +1,24 @@
+{{#each meals as |meal|}}
+  <div class="dish col-md-4">
+    <p>
+      
+        {{meal.name}}
+        {{meal.description}}
+
+        {{category.category_name}}
+
+    </p>
+  </div>
+  
+  {{/each}}
+
+  {{#each categories as |category|}}
+  <div class="dish col-md-4">
+    <p>
+
+        {{category.category_name}}
+
+    </p>
+  </div>
+  
+  {{/each}}
