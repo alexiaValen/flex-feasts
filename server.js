@@ -38,7 +38,31 @@ const sess = {
 const url = 'https://www.muscleandstrength.com/articles';
 const articles = []
 
-axios(url)
+// axios(url)
+//   .then(response => {
+//     const html = response.data
+//     const $ = cheerio.load(html)
+//     // const articles = [] //node-short-summary
+
+//     $('.node-title', html).each(function() {
+//       const title = $(this).text().replace(/\n/g,'')
+//       const url = $(this).find('a').attr('href')
+//       articles.push({
+//          title,
+//           url
+//       })
+//     })
+//     //  fs.writeFile("./seeds/articlesData.json", JSON.stringify(articles, null, 2), (err) => {
+//     //   if (err) {
+//     //     console.error(err);
+//     //     return;
+//     //   }
+//     //   console.log("Successfully written data to file");
+//     // });
+//   }).catch(err => console.log(err))
+
+app.get('/articles', (req,res) => {
+  axios(url)
   .then(response => {
     const html = response.data
     const $ = cheerio.load(html)
@@ -52,17 +76,15 @@ axios(url)
           url
       })
     })
-     fs.writeFile("./seeds/articlesData.json", JSON.stringify(articles, null, 2), (err) => {
-      if (err) {
-        console.error(err);
-        return;
-      }
-      console.log("Successfully written data to file");
-    });
+    //  fs.writeFile("./seeds/articlesData.json", JSON.stringify(articles, null, 2), (err) => {
+    //   if (err) {
+    //     console.error(err);
+    //     return;
+    //   }
+    //   console.log("Successfully written data to file");
+    // });
+    res.json(articles)
   }).catch(err => console.log(err))
-
-app.get('/articles', (req,res) => {
-  res.send(articles);
 }); 
 
 app.use(session(sess));
