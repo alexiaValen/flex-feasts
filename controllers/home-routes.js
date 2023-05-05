@@ -28,6 +28,33 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+router.post('/profile', async (req, res) => {
+  try {
+    if (!req.body.name) {
+      return res.status(400).json({ error: 'Name field is required' });
+    }
+    
+    console.log(req.body);
+    const newMeal = await Meal.create({
+      name: req.body.name,
+      description: req.body.description,
+      prep_time: req.body.prep_time,
+      cook_time: req.body.cook_time,
+      ingredients: req.body.ingredients.split('\n'),
+      instructions: req.body.instructions,
+      protein: req.body.protein,
+      fat: req.body.fat,
+      carbs: req.body.carbs,
+      calories: req.body.calories,
+      category_id: req.body.category || null // set category to null if not provided
+    });
+    
+    res.status(200).json(newMeal);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {

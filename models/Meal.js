@@ -13,7 +13,6 @@ Meal.init(
         },
         name: {
             type: DataTypes.STRING,
-            allowNull: false,
         },
         description: {
             type: DataTypes.STRING,
@@ -21,11 +20,9 @@ Meal.init(
         },
         prep_time: {
             type: DataTypes.INTEGER,
-            allowNull: false,
         },
         cook_time: {
             type: DataTypes.INTEGER,
-            allowNull: false,
         },
         ingredients: {
             type: DataTypes.JSON,
