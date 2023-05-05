@@ -20,10 +20,14 @@
   "homepage": "https://github.com/alexiaValen/flex-feasts#readme",
   "dependencies": {
     "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
     "cheerio": "^1.0.0-rc.12",
+    "connect-session-sequelize": "^7.1.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
     "mysql2": "^3.2.4",
     "sequelize": "^6.31.1"
   }
