@@ -1,12 +1,42 @@
 // module.exports = router;
 const router = require('express').Router();
-const { Category, Meal, User, Project } = require('../models');
+const { Category, Meal, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-// router.get('/', async (req, res) => {
-//   // Send the rendered Handlebars.js template back as the response
-//   res.render('homepage');
-// });
+router.get('/articles', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('articles');
+});
+
+router.get('/vegan', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('vegan');
+});
+
+router.get('/vegetarian', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('vegetarian');
+});
+
+router.get('/meats', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('meats');
+});
+
+router.get('/workouts', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('workouts');
+});
+
+router.get('/glutenfree', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('glutenfree');
+});
+
+router.get('/pescatarian', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('pescatarian');
+});
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
@@ -74,7 +104,7 @@ router.get('/meals', async (req, res) => {
   
       // Serialize data so the template can read it
       const meals = mealsData.map((meal) => meal.get({ plain: true }));
-      res.render('homepage', { meals });
+      res.render('meals', { meals });
       // Pass serialized data and session flag into template
       //res.render('homepage', { 
        // meals 

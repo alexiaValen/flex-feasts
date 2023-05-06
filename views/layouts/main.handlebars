@@ -14,11 +14,19 @@
     <header class="header display-flex justify-space-between align-center p-2">
       <h1>
         <span role="img" aria-label=""></span>
-        <a href="/"><img src="/images/2.png"></a>
+        {{!-- <a href="/"><img src="/images/new.png"></a> --}}
       </h1>
       <nav>
+        <a href="/">Home</a>
         <a href="/meals">All Recipes</a>
-        <a href="/profile">profile</a>
+        <a class="vegan-btn" href="/vegan">Vegan</a>
+        <a class="vegetarian-btn" href="/vegetarian">Vegetarian</a>
+        <a class="meats-btn" href="/meats">Meats</a>
+        <a class="glutenfree-btn" href="/glutenfree">Gluten-Free</a>
+        <a class="pescatarian-btn" href="/pescatarian">Pescatarian</a>
+        <a class="workout-btn" href="/workouts">Workouts</a>
+        <a class="articles-btn" href="/articles">Articles</a>
+        <a href="/profile">Profile</a>
         <!-- Conditionally render login or logout links -->
         {{!-- {{#if logged_in}}
         <a href="/profile">profile</a> |
@@ -45,5 +53,5 @@
   {{/if}}
 </body>
 
+
 </html>
-<script src="./js/articles.js"></script>
