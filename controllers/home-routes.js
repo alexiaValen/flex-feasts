@@ -9,13 +9,37 @@ router.get('/articles', async (req, res) => {
 });
 
 router.get('/vegan', async (req, res) => {
-  // Send the rendered Handlebars.js template back as the response
-  res.render('vegan');
+  try {
+    const mealsData = await Meal.findAll({
+      where: { category_id: 1 },
+    }).catch((err) => {
+      res.json(err);
+    });
+
+    const meals = mealsData.map((meal) => meal.get({ plain: true }));
+
+    res.render('vegan', { meals });
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/vegetarian', async (req, res) => {
-  // Send the rendered Handlebars.js template back as the response
-  res.render('vegetarian');
+  try {
+    const mealsData = await Meal.findAll({
+      where: { category_id: 2 },
+    }).catch((err) => {
+      res.json(err);
+    });
+
+    const meals = mealsData.map((meal) => meal.get({ plain: true }));
+
+    res.render('vegetarian', { meals });
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/meats', async (req, res) => {
@@ -29,13 +53,37 @@ router.get('/workouts', async (req, res) => {
 });
 
 router.get('/glutenfree', async (req, res) => {
-  // Send the rendered Handlebars.js template back as the response
-  res.render('glutenfree');
+  try {
+    const mealsData = await Meal.findAll({
+      where: { category_id: 3 },
+    }).catch((err) => {
+      res.json(err);
+    });
+
+    const meals = mealsData.map((meal) => meal.get({ plain: true }));
+
+    res.render('glutenfree', { meals });
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/pescatarian', async (req, res) => {
-  // Send the rendered Handlebars.js template back as the response
-  res.render('pescatarian');
+  try {
+    const mealsData = await Meal.findAll({
+      where: { category_id: 4 },
+    }).catch((err) => {
+      res.json(err);
+    });
+
+    const meals = mealsData.map((meal) => meal.get({ plain: true }));
+
+    res.render('pescatarian', { meals });
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // Use withAuth middleware to prevent access to route
@@ -60,13 +108,26 @@ router.get('/profile', withAuth, async (req, res) => {
 
 router.post('/profile', async (req, res) => {
   try {
-    if (!req.body.name) {
+    if (!req.body.recipe) {
       return res.status(400).json({ error: 'Name field is required' });
     }
-    
-    console.log(req.body);
+
+    let filename = ''; // initialize filename to empty string
+
+    if (req.body.category === '1') { // if Vegan category is selected
+      filename = 'vegan-logo.jpeg';
+    } else if (req.body.category === '2') { // if Vegetarian category is selected
+      filename = 'vegetarian-logo.jpeg';
+    } else if (req.body.category === '3') { // if gluten-free category is selected
+      filename = 'gluten-free-logo.jpeg';
+    } else if (req.body.category === '4') { // if Pescatarian category is selected
+      filename = 'pescatarian-logo.jpeg';
+    } else { // if no category is selected
+      filename = '5.png';
+    }
+
     const newMeal = await Meal.create({
-      name: req.body.name,
+      name: req.body.recipe,
       description: req.body.description,
       prep_time: req.body.prep_time,
       cook_time: req.body.cook_time,
@@ -76,6 +137,7 @@ router.post('/profile', async (req, res) => {
       fat: req.body.fat,
       carbs: req.body.carbs,
       calories: req.body.calories,
+      filename: filename,
       category_id: req.body.category || null // set category to null if not provided
     });
     
@@ -85,6 +147,8 @@ router.post('/profile', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {

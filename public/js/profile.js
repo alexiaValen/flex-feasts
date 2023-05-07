@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
     const response = await fetch(`/profile`, {
       method: 'POST',
       body: JSON.stringify({
-        name,
+        recipe: name,
         description,
         prep_time: prepTime,
         cook_time: cookTime,

@@ -23,21 +23,3 @@
   </div>
 {{/each}}
 
-<div class="meal">
-  <h2>{{meal.name}}</h2>
-  <img src="/images/{{meal.filename}}" alt="">
-  <p>{{meal.description}}</p>
-  <h3>Ingredients:</h3>
-  <ul>
-    {{#each meal.ingredients}}
-      <li>{{this}}</li>
-    {{/each}}
-  </ul>
-  <h3>Instructions:</h3>
-  <p>{{meal.instructions}}</p>
-  <h3>Nutrition:</h3>
-  <p>Protein: {{meal.protein}}g</p>
-  <p>Fat: {{meal.fat}}g</p>
-  <p>Carbs: {{meal.carbs}}g</p>
-  <p>Calories: {{meal.calories}}</p>
-</div>
