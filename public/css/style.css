@@ -52,6 +52,12 @@ h2 {
     font-family: sans-serif;
 }
 
+img {
+    height: 400px;
+    width: 400px;
+}
+
+
 footer {
     align-self:center;
     margin-top:5%;
