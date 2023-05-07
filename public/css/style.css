@@ -10,11 +10,15 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    color: #c32929;
+    color: #4d4a48;
     font-weight: 600;
     /* background: url("./images/FEASTS.jpg") no-repeat center fixed; */
     background-size: cover;
     background-color:  #2b4450;
+}
+
+.navbar{
+    background: #ea9115f0; 
 }
 
 .center {
@@ -24,9 +28,21 @@ body {
     width: 50%;
 }
 
+.logo{
+    height: 90px;
+}
+
 .home-page-div{
     /* background: #d8ab3a; */
     margin: 20px; 
+}
+
+.main{
+    padding-top: 130px;
+}
+
+.meal{
+    background: #eeeeee;
 }
 
 h1 {
@@ -42,6 +58,7 @@ h2 {
     text-align: center;
     margin: 5%;
     text-shadow: 1px 1px 1px whitesmoke;
+    color: rgb(178, 108, 22);
 }
 
 .button-xlarge, button {

@@ -1,8 +1,9 @@
 {{#each meals}}
-  <div class="meal">
-    <h2>{{name}}</h2>
-    <img src="/images/{{filename}}" alt="">
-    <p>{{description}}</p>
+  <div class="meal card">
+    <h2 class="card-title">{{name}}</h2>
+    <img src="/images/{{filename}}" class="card-img-top" alt="">
+    <div class="card-body">
+    <p class="card-text">{{description}}</p>
     {{#if ingredients}}
       <h3>Ingredients:</h3>
       <ul>
@@ -21,5 +22,6 @@
     <p>Carbs: {{carbs}}g</p>
     <p>Calories: {{calories}}</p>
   </div>
+</div>
 {{/each}}
 

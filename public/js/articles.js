@@ -1,0 +1,14 @@
+const artcilesBtn = document.querySelector('.articles-btn');
+const articlesDisplay = document.querySelector('#articles');
+const articlesUrl = 'http://localhost:3001/api/articles';
+
+//https://https://flex-feasts.herokuapp.com/artciles
+fetch(articlesUrl)
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(resource => {
+            const resourceItem = 
+            `<h2 class="title">` + resource.title + `</h2><br><a href="` + resource.url + `">` + resource.url + `</a><br>`
+            articlesDisplay.insertAdjacentHTML("beforeEnd", resourceItem)
+    });
+}).catch(err => console.log(err))
