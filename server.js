@@ -34,6 +34,8 @@ const sess = {
   })
 };
 
+app.use(session(sess));
+
 //code for webscraping 
 const artcilesUrl = 'https://www.muscleandstrength.com/articles';
 const workoutUurl = 'https://www.muscleandstrength.com/workout-routines';
@@ -78,7 +80,6 @@ app.get('/api/workouts', (req,res) => {
   }).catch(err => console.log(err))
 });
 
-app.use(session(sess));
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
