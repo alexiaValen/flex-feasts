@@ -37,7 +37,8 @@ const sess = {
 //code for webscraping 
 const artcilesUrl = 'https://www.muscleandstrength.com/articles';
 const workoutUurl = 'https://www.muscleandstrength.com/workout-routines';
-const articles = []
+const workoutsData = [];
+const articlesData = [];
 
 app.get('/api/articles', (req,res) => {
   axios(artcilesUrl)
@@ -49,12 +50,12 @@ app.get('/api/articles', (req,res) => {
     $('.node-title', html).each(function() {
       const title = $(this).text().replace(/\n/g,'')
       const url = $(this).find('a').attr('href')
-      articles.push({
+      articlesData.push({
          title,
           url
       })
     })
-    res.json(articles)
+    res.json(articlesData)
   }).catch(err => console.log(err))
 });
 
@@ -65,15 +66,15 @@ app.get('/api/workouts', (req,res) => {
     const $ = cheerio.load(html)
     // const articles = [] //node-short-summary
 
-    $('.node-title', html).each(function() {
+    $('.has-attributes', html).each(function() {
       const title = $(this).text().replace(/\n/g,'')
       const url = $(this).find('a').attr('href')
-      articles.push({
+      workoutsData.push({
          title,
           url
       })
     })
-    res.json(articles)
+    res.json(workoutsData)
   }).catch(err => console.log(err))
 });
 
