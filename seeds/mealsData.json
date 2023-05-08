@@ -4,25 +4,25 @@
         "description": "A healthy and quick lunch wrap that can be enjoyed on the go.",
         "prep_time": 5,
         "cook_time": 20,
-        "ingredients": ["Chicken Breast", "Avocado", "Tomatoes", "Tortilla", "Cheddar Cheese", "Lettuce"],
-        "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper mollis risus eget laoreet. Aliquam vel arcu rutrum, aliquam risus at, finibus erat. Duis rhoncus ex elit, et malesuada mauris sodales et. Phasellus suscipit in nisi ut blandit. Ut id scelerisque felis. Nulla eu ullamcorper eros. Phasellus posuere iaculis tortor.",
-        "protein": 25,
-        "fat": 10,
-        "carbs": 30,
+        "ingredients": ["2 Chicken Breast", "1 large Avocado", "2 Tomatoes", "Flour Tortillas", "1 cup Cheddar Cheese", "1 head Lettuce"],
+        "instructions": "Rinse and pat dry chicken breasts. Season with salt and pepper on both sides. Preheat a pan on medium/high heat and add 2 tablespoons olive oil. Place the meat on the skillet and cover with a lid. Cook for about 5-7 minutes, then flip and cook for another 5 minutes. Slice cooked or grilled chicken, chop lettuce, tomatoes, and avocado, and grate sharp cheddar. Put a large burrito size tortilla on a plate, layer with about ½ cup chopped lettuce, ¼ cup tomatoes, avocado, a tablespoon sour cream, few slices of grilled chicken, and top with ¼ cup grated sharp cheddar. Wrap them like an envelope. Preheat a pan on medium/high heat (you DON'T need to grease it with oil). Place the wraps with edges down and grill for a couple of minutes, until brown/golden color, then flip and grill on the other side.",
+        "protein": 26,
+        "fat": 15,
+        "carbs": 32,
         "filename": "Chicken-wrap.jpeg",
-        "calories": 500
+        "calories": 412
     },
     {
         "name": "Lemon Baked Salmon",
         "description": "A flavorful and easy dinner that brings out the flavor of the salmon with simple ingredients.",
         "prep_time": 10,
         "cook_time": 30,
-        "ingredients": ["Salmon", "Lemon", "Garlic", "Itallian Seaoning", "Salt", "Pepper"],
-        "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper mollis risus eget laoreet. Aliquam vel arcu rutrum, aliquam risus at, finibus erat. Duis rhoncus ex elit, et malesuada mauris sodales et. Phasellus suscipit in nisi ut blandit. Ut id scelerisque felis. Nulla eu ullamcorper eros. Phasellus posuere iaculis tortor.",
-        "protein": 25,
-        "fat": 15,
-        "carbs": 20,
-        "calories": 400,
+        "ingredients": ["Salmon Fillets", "Olive Oil", "Lemon", "Minced Garlic", "Itallian Seaoning", "Salt", "Pepper"],
+        "instructions": "Preheat the oven to 400 degrees and grease a large baking pan. Arrange the salmon fillets on the baking sheet and season generously with salt and pepper. Stir together the olive oil, garlic, herbs, and juice of 1/2 of the lemon. Spoon this sauce over salmon fillets, being sure to rub all over the tops and sides of the salmon so it has no dry spots. Thinly slice the remaining 1/2 of the lemon and top each piece of salmon with a slice of lemon. Bake the salmon in the oven for 12-15 minutes or until the salmon is opaque and flaky when pulled apart with a fork. You can broil the last 1-2 minutes if desired. Garnish with fresh thyme or parsley if desired and serve.",
+        "protein": 32,
+        "fat": 18,
+        "carbs": 12,
+        "calories": 330,
         "filename": "baked-salmon.jpeg",
         "category_id": 4
     },
@@ -31,14 +31,14 @@
         "description": "A simple yet tasty Asian inspired stir-fry dish.",
         "prep_time": 10,
         "cook_time": 30,
-        "ingredients": ["Rice Noodles", "Firm Tofu", "Soy Sauce", "Green Onion", "Chille Peppers"],
-        "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper mollis risus eget laoreet. Aliquam vel arcu rutrum, aliquam risus at, finibus erat. Duis rhoncus ex elit, et malesuada mauris sodales et. Phasellus suscipit in nisi ut blandit. Ut id scelerisque felis. Nulla eu ullamcorper eros. Phasellus posuere iaculis tortor.",
+        "ingredients": ["Rice Noodles", "Vegetable Oil", "Firm Tofu", "Soy Sauce", "Garlic Paste", "Green Onion", "Chille Peppers"],
+        "instructions": "Cut block of tofu into thirds crosswise, then cut each piece crosswise again into 3 pieces (you should have 9 square-ish pieces). Pat dry with paper towels. Heat 2 Tbsp. vegetable oil in a large skillet, preferably nonstick, over medium-high. When oil is shimmering and easily slides across surface of pan, cook tofu, undisturbed, until golden brown underneath, about 4 minutes. Turn and continue to cook until browned on second side, about 4 minutes. Transfer tofu to a plate, leaving oil in pan. Pour remaining 1 Tbsp. vegetable oil into skillet and heat over medium-high until shimmering. Add green onions and chillies to pan and cook, about 4 minutes. Add soy sauce and garlic paste, about one minute and remove from heat. Cook noodles according to package instructions. Distrubute evenly, and serve tofu and vegetables on top.",
         "protein": 22,
         "fat": 14,
         "carbs": 50,
         "calories": 410,
         "filename": "Vegan-Stir-Fry.jpeg",
-        "category_id": 1
+        "category_id": 2
     },
     {
         "name": "Quick Guacamole Quinoa Salad",
@@ -196,7 +196,7 @@
         "category_id": 2
     },
     {
-        "name": "",
+        "name": "Crisy Chickpeas and Scallops",
         "description": "If you're craving seafood but sick of the same old salmon, try this recipe for crispy chickpeas and scallops with garlic-harissa oil. It's going to change the way you think about cooking scallops at home. ",
         "prep_time": 5,
         "cook_time": 25,
@@ -208,6 +208,35 @@
         "calories": 461,
         "filename":"crispy-chickpeas-and-scallops.webp",
         "category_id": 4
+    },
+    {
+        "name": "Mediterranean Quinoa Bowls with Roasted Red Pepper Sauce",
+        "description": "It's low in carbs, high in protein and totally satisfying. Build your own bowl based on how you like it!",
+        "prep_time": 10,
+        "cook_time": 30,
+        "ingredients": ["1 16 ounce jar roasted red peppers, drained", "1 clove garlic", "juice of one lemon", "½ cup olive oil", "½ cup almonds" ,"cooked quinoa", "spinach, kale, or cucumber" ,"feta cheese", "kalamata olives", "pepperoncini", "thinly sliced red onion", "hummus", "fresh basil or parsley"],
+        "instructions": "Pulse all the ingredients for the sauce (Red peppers, Garlic, salt, lemon juice, olive oil, almonds) in a food processor or blender until mostly smooth. The texture should be thick and textured. Cook the quinoa according to package directions. When the quinoa is done, build yourself a Mediterranean Quinoa Bowl! Store leftovers in separate containers and assemble each bowl just before serving, especially the greens and the sauces, as those will get soggy when stored with all the other ingredients.",
+        "protein": 14,
+        "fat": 25,
+        "carbs": 18,
+        "calories": 381,
+        "filename": "mediterranean-quinoa-bowl.jpeg",
+        "category_id": 1
+    },
+    {
+        "name": "Honey-Lime Chicken and Veggies in Foil",
+        "description": "Dinner doesn't seem so hard when there's no cleanup involved. Each portion of this honey-lime chicken and veggies cooks inside a little foil packet that you place directly on the grill. Once everything's cooked, just throw away the foil.",
+        "prep_time": 15,
+        "cook_time": 20,
+        "ingredients": ["3 tablespoons unsalted butter, melted", "2 tablespoons extra-virgin olive oil", "2 garlic cloves, minced", "1 tablespoon minced ginger", "2 tablespoons honey", "Zest of 1 lime", "Four 6-ounce chicken breasts", "1 teaspoon cumin" ,"½ teaspoon smoked paprika", "1 bunch asparagus", "2 ears corn, halved", "2 tablespoons chopped fresh cilantro", "¼ cup thinly sliced green onion"],
+        "instructions": "In a small bowl, stir together the butter, olive oil, garlic, ginger, honey and lime zest. Using 12-inch sheets of foil, build four packets. Place a chicken breast in the center of each. Season it with cumin and paprika. Divide the asparagus among the packets. Brush the chicken and asparagus with the honey-ginger sauce and season with salt and pepper. Fold the foil over the food inside and crimp several times to seal. Preheat a grill or grill pan over medium-high heat. Grill the packets until the chicken is cooked through, 10 to 12 minutes. About 5 minutes before the chicken is finished, add the corn to the grill and cook until it’s browned on all sides, about 5 minutes. Garnish the chicken with cilantro and green onion before serving.",
+        "protein": 32,
+        "fat": 29,
+        "carbs": 24,
+        "calories": 474,
+        "filename": "honey-lime-chicken-and-veggies.png",
+        "category_id": 3
     }
+
 
 ]
