@@ -11,7 +11,7 @@ router.get('/articles', async (req, res) => {
 router.get('/vegan', async (req, res) => {
   try {
     const mealsData = await Meal.findAll({
-      where: { category_id: 1 },
+      where: { category_id: 2 },
     }).catch((err) => {
       res.json(err);
     });
@@ -28,7 +28,7 @@ router.get('/vegan', async (req, res) => {
 router.get('/vegetarian', async (req, res) => {
   try {
     const mealsData = await Meal.findAll({
-      where: { category_id: 2 },
+      where: { category_id: 1 },
     }).catch((err) => {
       res.json(err);
     });
@@ -115,9 +115,9 @@ router.post('/profile', async (req, res) => {
     let filename = ''; // initialize filename to empty string
 
     if (req.body.category === '1') { // if Vegan category is selected
-      filename = 'vegan-logo.jpeg';
-    } else if (req.body.category === '2') { // if Vegetarian category is selected
       filename = 'vegetarian-logo.jpeg';
+    } else if (req.body.category === '2') { // if Vegetarian category is selected
+      filename = 'vegan-logo.jpeg';
     } else if (req.body.category === '3') { // if gluten-free category is selected
       filename = 'gluten-free-logo.jpeg';
     } else if (req.body.category === '4') { // if Pescatarian category is selected
