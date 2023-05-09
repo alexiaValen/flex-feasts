@@ -1,5 +1,5 @@
 const workoutDisplay = document.querySelector('#workouts');
-const workoutUrl = 'http://localhost:3001/api/workouts';
+const workoutUrl = 'https://flex-feasts.herokuapp.com/api/workouts';
 
 fetch(workoutUrl)
 .then(response => response.json())
