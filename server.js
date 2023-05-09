@@ -36,6 +36,15 @@ const sess = {
 
 app.use(session(sess));
 
+app.use((req, res, next) => {
+  if (req.session && req.session.user_id) {
+    res.locals.logged_in = true;
+  } else {
+    res.locals.logged_in = false;
+  }
+  next();
+});
+
 //code for webscraping 
 const artcilesUrl = 'https://www.muscleandstrength.com/articles';
 const workoutUurl = 'https://www.muscleandstrength.com/workout-routines';
