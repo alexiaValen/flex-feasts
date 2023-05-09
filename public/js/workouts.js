@@ -6,7 +6,8 @@ fetch(workoutUrl)
 .then(data => {
     data.forEach(resource => {
         const resourceItem = 
-        `<h2 class="scrapedTitle">` + resource.title + `</h2><br><a class="scrapedLink" href="` + resource.url + `">` + resource.url + `</a><br>`
+        `<div class="card "><h2 class="scrapedTitle">` + resource.title + `</h2>
+        <a class="scrapedLink" href="` + resource.url + `">` + resource.url + `</a><br><br><br></div>`
         workoutDisplay.insertAdjacentHTML("beforeEnd", resourceItem)
 });
 }).catch(err => console.log(err))

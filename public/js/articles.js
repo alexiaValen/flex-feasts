@@ -1,6 +1,6 @@
 const artcilesBtn = document.querySelector('.articles-btn');
 const articlesDisplay = document.querySelector('#articles');
-const articlesUrl = 'https://flex-feasts.herokuapp.com/api/artciles';
+const articlesUrl = 'https://flex-feasts.herokuapp.com/api/articles';
 
 //https://https://flex-feasts.herokuapp.com/artciles
 fetch(articlesUrl)
