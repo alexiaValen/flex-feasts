@@ -8,7 +8,7 @@ fetch(articlesUrl)
     .then(data => {
         data.forEach(resource => {
             const resourceItem = 
-            `<h2 class="title">` + resource.title + `</h2><br><a href="` + resource.url + `">` + resource.url + `</a><br>`
+            `<h2 class="scrapedTitle">` + resource.title + `</h2><br><a class="scrapedLink" href="` + resource.url + `">` + resource.url + `</a><br>`
             articlesDisplay.insertAdjacentHTML("beforeEnd", resourceItem)
     });
 }).catch(err => console.log(err))
