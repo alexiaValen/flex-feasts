@@ -61,6 +61,13 @@ h2 {
     color: rgb(178, 108, 22);
 }
 
+.scrapedLink{
+    text-align: center;
+    text-decoration: none;
+    color: #4d4a48;
+    font-size: 20px;
+}
+
 .button-xlarge, button {
     text-align: center;
     align-self:center;
