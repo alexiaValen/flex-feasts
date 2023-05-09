@@ -22,6 +22,9 @@
     <a class="nav-link workout-btn" href="/workouts">Workouts</a>
     <a class="nav-link articles-btn" href="/articles">Articles</a>
     <a class="nav-link" href="/profile">Profile</a>
+    {{#if logged_in}}
+    <a class="nav-link" id="logout" href="/profile">Logout</a>
+    {{/if}}
     <div class="dropdown">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Categories
