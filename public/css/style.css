@@ -37,6 +37,22 @@ body {
     margin: 20px; 
 }
 
+.homepage-container {
+    color:#4d4a48;
+    text-decoration: none;
+
+}
+
+.homepage-container p {
+    font-size: 130%;
+    padding: 5px 20px;
+}
+
+.homepage-container h1 {
+    text-decoration: none;
+    text-shadow:#4d4a48 2px 2px 2px;
+}
+
 .main{
     padding-top: 130px;
 }
