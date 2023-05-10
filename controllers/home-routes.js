@@ -114,9 +114,9 @@ router.post('/profile', async (req, res) => {
 
     let filename = ''; // initialize filename to empty string
 
-    if (req.body.category === '1') { // if Vegan category is selected
+    if (req.body.category === '1') { // if Vegetarian category is selected
       filename = 'vegetarian-logo.jpeg';
-    } else if (req.body.category === '2') { // if Vegetarian category is selected
+    } else if (req.body.category === '2') { // if Vegan category is selected
       filename = 'vegan-logo.jpeg';
     } else if (req.body.category === '3') { // if gluten-free category is selected
       filename = 'gluten-free-logo.jpeg';
