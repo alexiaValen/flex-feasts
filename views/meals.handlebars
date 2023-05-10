@@ -1,0 +1,27 @@
+{{#each meals}}
+  <div class="meal card">
+    <h2 class="card-title">{{name}}</h2>
+    <img src="/images/{{filename}}" class="card-img-top" alt="">
+    <div class="card-body">
+    <p class="card-text">{{description}}</p>
+    {{#if ingredients}}
+      <h3>Ingredients:</h3>
+      <ul>
+        {{#each ingredients}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>No ingredients listed.</p>
+    {{/if}}
+    <h3>Instructions:</h3>
+    <p>{{instructions}}</p>
+    <h3>Nutrition:</h3>
+    <p>Protein: {{protein}}g</p>
+    <p>Fat: {{fat}}g</p>
+    <p>Carbs: {{carbs}}g</p>
+    <p>Calories: {{calories}}</p>
+  </div>
+</div>
+{{/each}}
+

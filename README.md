@@ -1,6 +1,7 @@
 # flex-feasts
 
 ## Description
+
 This application is designed for people looking to add healthy recipes to their gym routines! All you have to do is log in and the website will present both an energizing new exercise for you to try, as well as a nutritious recipe to create. You can also add your own recipes & nutrition facts!
 
 ## Usage
@@ -17,7 +18,6 @@ Alexia Valenzuela https://github.com/alexiaValen
 Josh Sandquist https://github.com/joshsandquist
 
 
-Dior Goolsby https://github.com/negromcgee
 
 ## License
 

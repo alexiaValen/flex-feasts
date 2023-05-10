@@ -1,0 +1,14 @@
+[
+    {
+        "category_name": "vegetarian"
+    },
+    {
+        "category_name": "vegan"
+    },
+    {
+        "category_name": "gluten-free"
+    },
+    {
+        "category_name": "pescatarian"
+    }
+]

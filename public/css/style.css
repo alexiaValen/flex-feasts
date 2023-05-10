@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    color: #4d4a48;
+    font-weight: 600;
+    /* background: url("./images/FEASTS.jpg") no-repeat center fixed; */
+    background-size: cover;
+    background-color:  #2b4450;
+}
+
+.navbar{
+    background: #ea9115f0; 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.logo{
+    height: 90px;
+}
+
+.home-page-div{
+    /* background: #d8ab3a; */
+    margin: 20px; 
+}
+
+.homepage-container {
+    color:#4d4a48;
+    text-decoration: none;
+
+}
+
+.homepage-container p {
+    font-size: 130%;
+    padding: 5px 20px;
+}
+
+.homepage-container h1 {
+    text-decoration: none;
+    text-shadow:#4d4a48 2px 2px 2px;
+}
+
+.main{
+    padding-top: 130px;
+}
+
+.meal{
+    background: #eeeeee;
+}
+
+h1 {
+    font-size: 600%;
+    margin: 2% 6%;
+    text-align: center;
+    text-shadow: 1px 1px 1px whitesmoke;
+    text-decoration: underline 3px whitesmoke;
+}
+
+h2 {
+    font-size: 235%;
+    text-align: center;
+    margin: 5%;
+    text-shadow: 1px 1px 1px whitesmoke;
+    color: rgb(178, 108, 22);
+}
+
+.scrapedLink{
+    text-align: center;
+    text-decoration: none;
+    color: #4d4a48;
+    font-size: 20px;
+}
+
+.button-xlarge, button {
+    text-align: center;
+    align-self:center;
+    width: 80%;
+    font-size:4.0vw;
+    font-family: sans-serif;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+
+footer {
+    align-self:center;
+    margin-top:5%;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 1px white;
+}
+
+a {
+    /* background-color: whitesmoke; */
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 555px) {
+    .button-xlarge {
+        font-size: 5.0vw;
+    }
+    h1 {
+        font-size: 400%;
+    }
+    h2 {
+        font-size:200%;
+    }
+}
+
