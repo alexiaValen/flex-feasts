@@ -117,9 +117,9 @@ router.post('/profile', async (req, res) => {
     if (req.body.category === '1') { // if Vegetarian category is selected
       filename = 'vegetarian-logo.jpeg';
     } else if (req.body.category === '2') { // if Vegan category is selected
-      filename = 'vegan-logo.jpeg';
+      filename = 'Vegan-logo.jpeg';
     } else if (req.body.category === '3') { // if gluten-free category is selected
-      filename = 'gluten-free-logo.jpeg';
+      filename = 'Gluten-free-logo.jpeg';
     } else if (req.body.category === '4') { // if Pescatarian category is selected
       filename = 'pescatarian-logo.jpeg';
     } else { // if no category is selected
