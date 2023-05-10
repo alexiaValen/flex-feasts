@@ -1,57 +1,56 @@
-<div class="row">
+<div class="card">
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
   </div>
-</div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
+<div class="card create-rec-div">
+  <div class="">
     <h3>Create a New Recipe:</h3>
-
+    <br>
     <form class="form new-meal-form" action="/create" method="post" enctype="multipart/form-data">
-      <div class="form-group">
-        <label for="recipe">Recipe name:</label>
-        <input class="form-input" type="text" id="recipe" name="recipe" />
+      <div class="form-group mb-3">
+        <label for="recipe" class="for-label">Recipe name:</label>
+        <input class="form-input form-control" type="text" id="recipe" name="recipe" />
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="description">Description:</label>
-        <textarea class="form-input" id="description" name="description"></textarea>
+        <textarea class="form-input form-control" id="description" name="description"></textarea>
       </div>
-      <div class="form-group">
-        <label for="prep-time">Prep time:</label>
-        <input class="form-input" type="text" id="prep-time" name="prep-time" />
+      <div class="form-group mb-3">
+        <label for="prep-time" class="for-label">Prep time:</label>
+        <input class="form-input form-control" type="text" id="prep-time" name="prep-time" />
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="cook-time">Cook time:</label>
-        <input class="form-input" type="text" id="cook-time" name="cook-time" />
+        <input class="form-input form-control" type="text" id="cook-time" name="cook-time" />
       </div>
-      <div class="form-group">
-        <label for="ingredients">Ingredients:</label>
-        <textarea class="form-input" id="ingredients" name="ingredients"></textarea>
+      <div class="form-group mb-3">
+        <label for="ingredients" class="for-label">Ingredients:</label>
+        <textarea class="form-input form-control" id="ingredients" name="ingredients"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="instructions">Instructions:</label>
-        <textarea class="form-input" id="instructions" name="instructions"></textarea>
+        <textarea class="form-input form-control" id="instructions" name="instructions"></textarea>
       </div>
-      <div class="form-group">
-        <label for="protein">Protein:</label>
-        <input class="form-input" type="text" id="protein" name="protein" />
+      <div class="form-group mb-3">
+        <label for="protein" class="for-label">Protein:</label>
+        <input class="form-input form-control" type="text" id="protein" name="protein" />
       </div>
-      <div class="form-group">
-        <label for="fat">Fat:</label>
-        <input class="form-input" type="text" id="fat" name="fat" />
+      <div class="form-group mb-3">
+        <label for="fat" class="for-label">Fat:</label>
+        <input class="form-input form-control" type="text" id="fat" name="fat" />
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <label for="carbs">Carbs:</label>
-        <input class="form-input" type="text" id="carbs" name="carbs" />
+        <input class="form-input form-control" type="text" id="carbs" name="carbs" />
       </div>
-      <div class="form-group">
-        <label for="calories">Calories:</label>
-        <input class="form-input" type="text" id="calories" name="calories" />
+      <div class="form-group mb-3">
+        <label for="calories" class="for-label">Calories:</label>
+        <input class="form-input form-control" type="text" id="calories" name="calories" />
       </div>
-      <div class="form-group">
-        <label for="category">Category:</label>
-        <select class="form-input" id="category" name="category">
+      <div class="form-group mb-3">
+        <label for="category" class="for-label">Category:</label>
+        <select class="form-input form-control" id="category" name="category">
           <option value="">--Select--</option>
           <option value="1">Vegan</option>
           <option value="2">Vegetarian</option>
@@ -60,7 +59,7 @@
           
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-3">
         <button type="submit" class="btn btn-primary">Create</button>
       </div>
     </form>

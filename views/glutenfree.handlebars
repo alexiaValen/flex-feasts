@@ -4,9 +4,9 @@
 {{#each meals}}
   <div class="meal card">
     <h2 class="card-title">{{name}}</h2>
-    <img src="/images/{{filename}}" class="card-img-top" alt="">
+    <img src="/images/{{filename}}" class="card-img-top img" style="" alt="">
     <div class="card-body">
-    <p>{{description}}</p>
+    <p class="card-text">"{{description}}"</p>
     {{#if ingredients}}
       <h3>Ingredients:</h3>
       <ul>

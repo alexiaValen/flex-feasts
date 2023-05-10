@@ -1,14 +1,16 @@
-const artcilesBtn = document.querySelector('.articles-btn');
 const articlesDisplay = document.querySelector('#articles');
-const articlesUrl = 'https://flex-feasts.herokuapp.com/api/articles';
+const articlesUrl = 'https://flex-feasts.herokuapp.com/api/articles';//http://localhost:3001/api/articles
 
-//https://https://flex-feasts.herokuapp.com/artciles
 fetch(articlesUrl)
     .then(response => response.json())
     .then(data => {
         data.forEach(resource => {
             const resourceItem = 
-            `<h2 class="scrapedTitle">` + resource.title + `</h2><br><a class="scrapedLink" href="` + resource.url + `">` + resource.url + `</a><br>`
+            `<div class="card ">
+            <h2 class="scrapedTitle">` + resource.title + `</h2>
+            <button type="button" class="btn btn-secondary">
+            <a class="scrapedLink" href="` + resource.url + `">Find Out More</a>
+            </button><br><br><br></div>`
             articlesDisplay.insertAdjacentHTML("beforeEnd", resourceItem)
     });
 }).catch(err => console.log(err))
