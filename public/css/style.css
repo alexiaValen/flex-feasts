@@ -21,6 +21,10 @@ body {
     background: #ea9115f0; 
 }
 
+.dropdown-toggle{
+    color: white;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -40,17 +44,29 @@ body {
 .homepage-container {
     color:#4d4a48;
     text-decoration: none;
-
+    padding: 45px;
+    box-shadow: 10px 10px 45px 15px rgba(0, 0, 0, 0.741);
+    background-image: url('/images/foodbackground-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* .background-img{
+    background-image: url('/images/foodbackground-1.png');
+    background-repeat: no-repeat;
+} */
 
 .homepage-container p {
     font-size: 130%;
     padding: 5px 20px;
+    text-align: center;
 }
 
 .homepage-container h1 {
     text-decoration: none;
     text-shadow:#4d4a48 2px 2px 2px;
+    margin-bottom: 60px;
+    color: rgb(20, 20, 20);
 }
 
 .main{
@@ -59,6 +75,7 @@ body {
 
 .meal{
     background: #eeeeee;
+    padding: 50px;
 }
 
 h1 {
@@ -70,18 +87,45 @@ h1 {
 }
 
 h2 {
-    font-size: 235%;
+    font-size: 40px;
     text-align: center;
     margin: 5%;
-    text-shadow: 1px 1px 1px whitesmoke;
+    text-shadow: 1px 1px 1px #928d8d;;
     color: rgb(178, 108, 22);
+    font-family: math;
+    font-weight: 550;
+}
+
+.img{
+    width: 65%;
+    height: 50%;
+    align-self: center;
+    box-shadow: 2px 2px 4px #b8b8b8;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 25px;
+    /* font-style: italic; */
+    font-family: serif;
+    color: black;
+}
+
+.meal-desc{
+    text-align: center;
 }
 
 .scrapedLink{
     text-align: center;
     text-decoration: none;
-    color: #4d4a48;
-    font-size: 20px;
+}
+
+.sign-up-div, .create-rec-div{
+    padding: 70px;
+}
+
+.btn{
+    width: 20%;
 }
 
 .button-xlarge, button {
@@ -92,17 +136,14 @@ h2 {
     font-family: sans-serif;
 }
 
-img {
-    height: 400px;
-    width: 400px;
-}
-
-
 footer {
-    align-self:center;
-    margin-top:5%;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 1px 1px 1px white;
+    align-self: center;
+    margin-top: 5%;
+    /* font-family: 'Playfair Display', serif; */
+    /* text-shadow: 1px 1px 1px white; */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.728);
+    margin-bottom: 30px;
 }
 
 a {

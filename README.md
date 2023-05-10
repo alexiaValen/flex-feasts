@@ -5,6 +5,16 @@
 This application is designed for people looking to add healthy recipes to their gym routines! All you have to do is log in and the website will present both an energizing new exercise for you to try, as well as a nutritious recipe to create. You can also add your own recipes & nutrition facts!
 
 ## Usage
+![main-img](./public/images/readme/main.png)
+![meal-img](./public/images/readme/meal.png)
+![category-img](./public/images/readme/category.png)
+![login-img](./public/images/readme/login.png)
+![create-img](./public/images/readme/create.png)
+![articles-img](./public/images/readme/articles.png)
+![articles-api-img](./public/images/readme/articleendpoint.png)
+![workouts-img](./public/images/readme/workouts.png)
+![articles-api-img](./public/images/readme/workoutsendpoint.png)
+
 
 ## Links
 
@@ -17,6 +27,8 @@ Alexia Valenzuela https://github.com/alexiaValen
 
 Josh Sandquist https://github.com/joshsandquist
 
+https://www.canva.com
+https://www.muscleandstrength.com/
 
 
 ## License
