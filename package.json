@@ -1,4 +1,9 @@
 {
+
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.31.0"
+=======
   "name": "flex-feasts",
   "version": "1.0.0",
   "description": "## Description This application is designed for people looking to add healthy recipes to their gym routines! All you have to do is log in and the website will present both an energizing new exercise for you to try, as well as a nutritious recipe to create.",
@@ -31,5 +36,6 @@
     "fs": "^0.0.1-security",
     "mysql2": "^3.2.4",
     "sequelize": "^6.31.1"
+
   }
 }
