@@ -79,7 +79,7 @@ body {
 }
 
 h1 {
-    font-size: 600%;
+    
     margin: 2% 6%;
     text-align: center;
     text-shadow: 1px 1px 1px whitesmoke;
@@ -157,10 +157,28 @@ a {
         font-size: 5.0vw;
     }
     h1 {
-        font-size: 400%;
+        font-size: x-large;
     }
     h2 {
-        font-size:200%;
+        font-size:larger;
+    }
+    p{
+        padding: 0;
+    }
+    footer{
+        font-size: x-small;
+    }
+    .btn{
+        width: fit-content;
+    }
+    .meal{
+        padding: 0px;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+    .main{
+        padding-top: 280px;
     }
 }
 
